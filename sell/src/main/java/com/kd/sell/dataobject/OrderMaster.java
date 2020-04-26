@@ -11,7 +11,7 @@ import java.math.BigDecimal;
 
 /**
  * @program: imoocTest
- * @description: 对应master表
+ * @description: 对应master表 买家
  * @author: sikuncheng
  * @create: 2020-04-09 18:50
  **/
