@@ -91,8 +91,10 @@ public class OrderServiceImpl implements OrderService {
 
         //3. 写入订单数据库（orderMaster和orderDetail）
         OrderMaster orderMaster = new OrderMaster();
+        //先设置，在拷贝
+        orderDTO.setOrderId(orderId);
         BeanUtils.copyProperties(orderDTO, orderMaster);
-        orderMaster.setOrderId(orderId);
+
         orderMaster.setOrderAmount(orderAmount);
         orderMaster.setOrderStatus(OrderStatusEnum.NEW.getCode());
         orderMaster.setPayStatus(PayStatusEnum.WAIT.getCode());
@@ -172,7 +174,7 @@ public class OrderServiceImpl implements OrderService {
 
         //判断是否退款,并判断是否需要执行
         if (orderDTO.getPayStatus().equals(PayStatusEnum.SUCCESS.getCode())) {
-            //TODO
+
         }
 
         return orderDTO;

@@ -8,6 +8,7 @@ import org.hibernate.annotations.DynamicUpdate;
 import javax.persistence.Entity;
 import javax.persistence.Id;
 import java.math.BigDecimal;
+import java.util.Date;
 
 /**
  * @program: imoocTest
@@ -46,8 +47,8 @@ public class OrderMaster {
     private Integer payStatus = PayStatusEnum.WAIT.getCode();
 
     /** 创建时间. */
-   // private Date createTime;
+    private Date createTime;
 
     /** 更新时间. */
-    //private Date updateTime;
+    private Date updateTime;
 }
