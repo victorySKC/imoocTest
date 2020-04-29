@@ -1,6 +1,6 @@
 package com.kd.sell.service.impl;
 
-import com.kd.converter.OrderMaster2OrderDTOConverter;
+import com.kd.sell.converter.OrderMaster2OrderDTOConverter;
 import com.kd.sell.dataobject.OrderDetail;
 import com.kd.sell.dataobject.OrderMaster;
 import com.kd.sell.dataobject.ProductInfo;

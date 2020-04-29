@@ -1,4 +1,4 @@
-package com.kd.converter;
+package com.kd.sell.converter;
 
 import com.google.gson.Gson;
 import com.google.gson.reflect.TypeToken;
